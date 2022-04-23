@@ -48,41 +48,53 @@ class Animal {
    
 
     class Mammals extends Animal{
-           super(name);
+        constructor(name, age, weight, limbAmount) {
+            super(name, age, weight, limbAmount);
+        }
+
     }
     class Birds extends Animal{
-            super(name);
+        constructor(name, age, weight, limbAmount) {
+            super(name, age, weight, limbAmount);
+        }
  
      }
      class Fish extends Animal{
-            super(name);
+        constructor(name, age, weight, limbAmount) {
+            super(name, age, weight, limbAmount);
+        }
     
      }
      class Predators extends Mammals{
-    
-            super(name);
-  
+        constructor(name, age, weight, limbAmount) {
+            super(name, age, weight, limbAmount);
+        }
     }
     class Whales extends Mammals{
-            super(name);
+        constructor(name, age, weight, limbAmount) {
+            super(name, age, weight, limbAmount);
+        }
     }
     class Primates extends Mammals{
-            super(name);
+        constructor(name, age, weight, limbAmount) {
+            super(name, age, weight, limbAmount);
         }
+    }
     class Human extends Primates{
-            super(name);
+        constructor(name, age, weight, limbAmount) {
+            super(name, age, weight, limbAmount);
         }
-    
+    }
     class Dog extends Predators{
-            super(name);
-
+        constructor(name, age, weight, limbAmount) {
+            super(name, age, weight, limbAmount);
         }
-    
+    }
      class Dolphin extends Whales{
-            super(name);
-
+        constructor(name, age, weight, limbAmount) {
+            super(name, age, weight, limbAmount);
         }
-    
+    }
     const myArr = new Animal();
     const stas =  new Human(`Stas`,30,70,4);
     const maks =  new Human(`Maks`,30,70,4); 
